@@ -1,0 +1,40 @@
+<section class="mat-typography htm-component-headline">
+    <h1>Nos Activités</h1>
+    <p>Découvrez l'ensemble des prestations que nous vous proposons avec une variété de compétences</p>
+</section>
+
+<section htmFlexDirection>
+    
+    <mat-card>
+        <mat-card-header>
+            <div mat-card-avatar><mat-icon>add_shopping_cart</mat-icon></div>
+            <mat-card-title>Conseil, Achat & Livraison</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="http://demo.themeum.com/html/oxygen/images/portfolio/portfolio-details.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+            <p>
+                Nous procédons aux achats en magasin à votre place et en votre nom, puis nous livrons et installons les articles chez vous.
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button>EXPLORE</button>
+        </mat-card-actions>
+    </mat-card>
+    <mat-card *ngFor="let i of list">
+        <mat-card-header>
+            <div mat-card-avatar><mat-icon>gavel</mat-icon></div>
+            <mat-card-title>{{i}} Travaux de bricolage & Entretien des jardins</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+            <p>
+                En tant qu'Homme Toute Main, nous intervenons sur les travaux à domicile et entretenons vos jardins, vos potagers et évacuons les déchets verts.
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button>EXPLORE</button>
+        </mat-card-actions>
+    </mat-card>
+
+    
+</section>

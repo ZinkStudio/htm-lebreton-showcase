@@ -1,0 +1,18 @@
+.htm-component-headline p {
+    color : #ffffff;
+}
+
+#htm-component-contact {
+    background-image: url('/assets/images/contact/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+    padding: 60px 0;
+    color: rgba(255, 255, 255, 0.87);
+}
+
+mat-list mat-list-item {
+    color: rgba(255, 255, 255, 0.87);
+}

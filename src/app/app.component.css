@@ -1,0 +1,31 @@
+.htm-app-viewer {
+    position: absolute;
+    top: 64px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.htm-component-wrapped {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 940px;
+    padding: 60px 0;
+    margin: 0 auto;
+}
+
+::ng-deep .htm-component-content {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+::ng-deep .htm-component-headline {
+    margin: 20px 0;
+    text-align: center;
+}
+
+::ng-deep .htm-component-headline p {
+    color: #666666;
+}

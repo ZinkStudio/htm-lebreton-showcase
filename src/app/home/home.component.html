@@ -1,0 +1,18 @@
+<header class="htm-header-background">
+    <div class="htm-header-section">
+        <section class="htm-header-headline">
+            <h1 class="mat-h1">Bienvenue Chez HTM</h1>
+            <h2 class="mat-h2">Habitation, Bricolage, Jardinage, Service à la Personne</h2>
+            <swiper class="swiper-container" [config]="config">
+                <div *ngFor="let slogan of slogans" class="swiper-slide">
+                    <div class="swiper-content-{{slogan.selector}}">
+                        <h2 class="mat-h2">{{slogan.value}}</h2>
+                    </div>
+                </div>
+            </swiper>
+        </section>
+        <section class="htm-header-start">
+            <a mat-raised-button>Démarrer la visite</a>
+        </section>
+    </div>
+</header>

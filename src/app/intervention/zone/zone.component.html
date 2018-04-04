@@ -1,0 +1,16 @@
+<section class="mat-typography htm-component-headline">
+  <h1>Zone d'Intervention</h1>
+  <p>
+    Notre zone d'intervention couvre un périmètre de 188km
+    <strong>(
+      <i>rayon de 30km</i>)</strong> ayant en son centre la commune de Sénas, comme illustré sur la carte ci-dessous.
+  </p>
+</section>
+<section>
+  <agm-map [latitude]="latitude" [longitude]="longitude" [zoom]="zoom" [zoomControl]="true" [scrollwheel]="lock">
+    <agm-marker [latitude]="latitude" [longitude]="longitude" [label]="label" [title]="title"></agm-marker>
+
+    <agm-circle #agmCircle [latitude]="latitude" [longitude]="longitude" [radius]="radius" [fillColor]="color" [circleDraggable]="lock"
+      [editable]="lock"></agm-circle>
+  </agm-map>
+</section>

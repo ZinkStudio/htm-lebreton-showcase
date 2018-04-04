@@ -1,0 +1,38 @@
+<mat-toolbar color="primary" class="mat-elevation-z6">
+    <mat-toolbar-row>
+        <span class="mat-button-wrapper">
+            <img class="docs-htm-logo" src="assets/icons/logo-transparent.png" alt="HTM">
+            <span>{{title}}</span>
+        </span>
+
+        <span class="toolbar-spacer"></span>
+
+        <nav class="button-row" *ngIf="toogleRowMenu">
+            <button mat-button>Accueil</button>
+            <button mat-button>Présentation</button>
+            <button mat-button>Activités</button>
+            <button mat-button>Tarifs</button>
+            <button mat-button>Zone d'Intervention</button>
+            <button mat-button>Engagements</button>
+            <button mat-button>Déclaration</button>
+            <button mat-button>Contact</button>
+        </nav>
+
+        <mat-menu #navigationMenu="matMenu">
+            <button mat-menu-item>Accueil</button>
+            <button mat-menu-item>Présentation</button>
+            <button mat-menu-item>Activités</button>
+            <button mat-menu-item>Tarifs</button>
+            <button mat-menu-item>Zone d'Intervention</button>
+            <button mat-menu-item>Engagements</button>
+            <button mat-menu-item>Déclaration</button>
+            <button mat-menu-item>Contact</button>
+        </mat-menu>
+
+        <span *ngIf="toogleMatMenu">
+            <button mat-icon-button  [matMenuTriggerFor]="navigationMenu">
+                    <mat-icon>more_vert</mat-icon>
+            </button>
+        </span>
+    </mat-toolbar-row>
+</mat-toolbar>

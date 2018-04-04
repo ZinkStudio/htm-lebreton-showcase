@@ -1,0 +1,24 @@
+#htm-component-presentation {
+    background-image: url('/assets/images/introduction/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+    padding: 60px 0;
+    color: rgba(255, 255, 255, 0.87);
+}
+
+section.htm-component-content p {
+    line-height: 150%;
+    padding-left: 20px;
+}
+
+section.htm-component-content p small { 
+    color : #BDBDBD;
+    font-size: 85%;
+}
+section.htm-component-content p small a {
+    text-decoration: none;
+    color: #2196F3;
+}

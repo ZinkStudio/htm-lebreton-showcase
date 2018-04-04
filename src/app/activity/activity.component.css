@@ -1,0 +1,13 @@
+.htm-component-content-flex-row mat-card {
+    max-width: 40%;
+    margin: 20px auto;
+}
+
+.htm-component-content-flex-column mat-card {
+    max-width: 40%;
+    margin: 20px auto;
+}
+
+mat-card mat-card-content p {
+    /* font-weight: 400; */
+}

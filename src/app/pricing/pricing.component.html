@@ -1,0 +1,50 @@
+<section class="mat-typography htm-component-headline">
+    <h1>Nos Tarifs</h1>
+    <p>
+        Notre politique de prix répond à un tarif attractif pour l'ensemble de nos prestations.
+        La première heure est fractionnable en demi, puis en quart les suivantes.
+    </p>
+</section>
+
+<section htmFlexDirection>
+
+    <mat-card *ngFor="let i of list">
+        <mat-card-header>
+            <mat-card-title>{{i}} Travaux de bricolage & Entretien des jardins</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <p>
+                20€/Heure
+            </p>
+            <ul>
+                <li>Carte Bancaire</li>
+                <li>Chèque</li>
+                <li>Espèces</li>
+            </ul>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button>en savoir plus</button>
+        </mat-card-actions>
+    </mat-card>
+
+</section>
+
+<section>
+    <p>    
+        Possibilité de bénéficier d'un abonnement avantageux pour les tâches récurentes,
+        les modalités du contrat sont à négocier lors d'un rendez-vous physique.<br>
+        <a href="#">Contactez-nous</a>
+        pour de plus amples informations.
+    </p>
+    <p>
+
+        <strong>
+            Devis offert, si vous êtes situé à l'interieur de notre zone d'intervention,
+            au delà seulement de 0,20 centime d'euro par kilomètre avec péage selon le trajet.
+        </strong>
+    </p>
+    <p>
+        Pour <a href="#">en savoir plus</a>
+        sur la grille tarifaire et observer des exemples de tarification.
+    </p>
+</section>

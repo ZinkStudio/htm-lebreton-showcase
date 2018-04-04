@@ -1,0 +1,24 @@
+/* custom viewer-wrapper */
+.htm-viewer {
+    display: block;
+    padding: 20px 0;
+    font-weight: 400;
+}
+.htm-viewer-wrapper {
+    background-color: #FFFFFF;
+
+    color: rgba(0, 0, 0, 0.87);
+    border:1px solid rgba(0,0,0,.03);
+    box-shadow:0 2px 2px rgba(0,0,0,.24),0 0 2px rgba(0,0,0,.12);
+    margin:4px
+}
+.htm-viewer-title {
+    display: flex;
+    justify-content: center;
+    padding: 8px 20px;
+    color:rgba(0,0,0,.54);
+    background:rgba(0,0,0,.03);line-height: 40px;
+}
+.htm-viewer-title-spacer {
+    flex: 1 1 auto;
+}
